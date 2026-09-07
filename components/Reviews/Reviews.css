@@ -1,0 +1,112 @@
+@reference "../../app/globals.css";
+
+.reviews {
+
+	/* Layout */
+	@apply flex flex-col items-center justify-center w-full;
+
+	/* Spacing */
+	@apply pt-16;
+
+}
+
+.reviews__inner {
+
+	/* Layout */
+	@apply container;
+
+}
+
+.reviews__items {
+
+	/* Layout */
+	@apply grid grid-cols-1 lg:grid-cols-4;
+
+	/* Spacing */
+	@apply gap-10 pt-16;
+
+}
+
+.reviews__item {
+
+	/* Layout */
+	@apply flex flex-col justify-between;
+
+	/* Spacing */
+	@apply gap-4 p-8;
+
+	/* Border */
+	@apply rounded-3xl;
+
+	/* Background */
+	@apply bg-white;
+
+}
+
+.reviews__stars {
+
+	/* Layout */
+	@apply flex flex-row;
+
+	/* Spacing */
+	@apply gap-1;
+
+}
+
+.reviews__star {
+
+	/* Sizing */
+	@apply size-5;
+
+	/* Color */
+	@apply text-[#f7b50a];
+
+}
+
+.reviews__comment {
+
+	/* Typography */
+	@apply text-sm text-slate-700;
+
+}
+
+.reviews__user {
+
+	/* Layout */
+	@apply flex flex-row;
+
+	/* Spacing */
+	@apply gap-3;
+
+}
+
+.reviews__avatar {
+
+	/* Border */
+	@apply rounded-2xl;
+
+}
+
+.reviews__name {
+
+	/* Typography */
+	@apply font-medium;
+
+}
+
+.reviews__offer {
+
+	/* Typography */
+	@apply text-sm text-slate-700;
+
+}
+
+.reviews__content {
+
+	/* Layout */
+	@apply flex flex-col;
+
+	/* Spacing */
+	@apply gap-3;
+
+}
