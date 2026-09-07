@@ -1,0 +1,204 @@
+@reference "../../app/globals.css";
+
+.header {
+
+	/* Layout */
+	@apply flex justify-center items-center w-full;
+
+}
+
+.header__inner {
+
+	/* Layout */
+	@apply relative flex flex-row justify-between items-center container;
+
+	/* Spacing */
+	@apply py-6;
+
+}
+
+.header__logo {
+
+	/* Layout */
+	@apply relative z-20;
+
+}
+
+.header__nav {
+
+	/* Layout */
+	@apply flex items-center;
+
+	/* Spacing */
+	@apply gap-8;
+
+}
+
+.header__link {
+
+	/* Typography */
+	@apply font-medium text-slate-600 hover:text-slate-900;
+
+	/* Animation */
+	@apply transition-colors;
+
+}
+
+.header__contacts {
+
+	/* Layout */
+	@apply flex flex-row items-center;
+
+	/* Spacing */
+	@apply gap-6;
+
+}
+
+.header__contact {
+
+	/* Layout */
+	@apply flex flex-col items-end;
+
+}
+
+.header__phone {
+
+	/* Typography */
+	@apply text-base font-medium text-slate-900;
+
+}
+
+.header__time {
+
+	/* Typography */
+	@apply text-sm text-slate-500;
+
+}
+
+.header__button {
+
+	/* Layout */
+	@apply flex flex-row items-center justify-center;
+
+	/* Spacing */
+	@apply gap-2 px-5 py-3;
+
+	/* Typography */
+	@apply text-xs uppercase font-medium;
+
+	/* Border */
+	@apply rounded-xl;
+
+	/* Background */
+	@apply bg-[#f7b50a] hover:bg-[#e5a80c];
+
+	/* Interaction */
+	@apply cursor-pointer;
+
+	/* Animation */
+	@apply transition-colors;
+
+}
+
+.header__burger {
+
+	/* Layout */
+	@apply hidden relative z-20 items-center justify-center;
+
+	/* Spacing */
+	@apply p-2;
+
+	/* Typography */
+	@apply text-slate-900;
+
+	/* Border */
+	@apply rounded-lg;
+
+	/* Interaction */
+	@apply cursor-pointer;
+
+}
+
+@media (max-width: 1024px) {
+
+	.header__inner {
+
+		/* Spacing */
+		@apply py-4;
+
+	}
+
+	.header__logo {
+
+		/* Sizing */
+		@apply w-[150px] h-auto;
+
+	}
+
+	.header__nav {
+
+		/* Layout */
+		@apply fixed left-0 top-0 z-10 hidden w-full h-screen flex-col justify-center;
+
+		/* Spacing */
+		@apply gap-8;
+
+		/* Background */
+		@apply bg-white;
+
+	}
+
+	.header__nav--open {
+
+		/* Layout */
+		@apply flex;
+
+	}
+
+	.header__link {
+
+		/* Typography */
+		@apply text-xl;
+
+	}
+
+	.header__contacts {
+
+		/* Layout */
+		@apply hidden;
+
+	}
+
+	.header__burger {
+
+		/* Layout */
+		@apply flex;
+
+	}
+
+}
+
+@media (max-width: 480px) {
+
+	.header__logo {
+
+		/* Sizing */
+		@apply w-[130px];
+
+	}
+
+	.header__nav {
+
+		/* Spacing */
+		@apply gap-6;
+
+	}
+
+	.header__link {
+
+		/* Typography */
+		@apply text-lg;
+
+	}
+
+}
