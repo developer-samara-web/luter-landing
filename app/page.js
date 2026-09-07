@@ -2,6 +2,7 @@ import Header from "@/components/Header/Header";
 import Hero from "@/components/Hero/Hero";
 import Practices from "@/components/Practices/Practices";
 import Advantages from "@/components/Advantages/Advantages";
+import About from "@/components/About/About";
 
 const Home = () => {
 	return (
@@ -10,6 +11,7 @@ const Home = () => {
 			<Hero />
 			<Practices />
 			<Advantages />
+			<About />
 		</main>
 	);
 }

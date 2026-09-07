@@ -1,0 +1,172 @@
+@reference "../../app/globals.css";
+
+
+.about {
+
+	/* Spacing */
+	@apply pt-16;
+
+}
+
+.about_inner {
+
+	/* Layout */
+	@apply grid grid-cols-1 lg:grid-cols-[3fr_4fr] container;
+
+	/* Spacing */
+	@apply gap-10 p-8;
+
+	/* Border */
+	@apply rounded-[25px];
+
+	/* Background */
+	@apply bg-white;
+
+}
+
+.about__card {
+
+	/* Layout */
+	@apply flex flex-col items-start justify-end;
+
+	/* Spacing */
+	@apply pt-32 px-5 pb-5 lg:p-8 gap-2;
+
+	/* Border */
+	@apply rounded-[15px];
+
+	/* Background */
+	@apply bg-[url(/images/about/about-1.webp)] bg-no-repeat bg-center bg-cover;
+
+}
+
+.about__first-name {
+
+	/* Typography */
+	@apply text-white font-medium text-xl lg:text-4xl/8;
+
+}
+
+.about__second-name {
+
+	/* Typography */
+	@apply text-white font-medium text-lg lg:text-3xl;
+
+}
+
+.about__jop {
+
+	/* Typography */
+	@apply text-slate-300;
+
+}
+
+.about__informations {
+
+	/* Layout */
+	@apply flex flex-col items-start;
+
+	/* Spacing */
+	@apply gap-8;
+
+}
+
+.about__badge {
+
+	/* Spacing */
+	@apply px-4 py-1;
+
+	/* Typography */
+	@apply text-xs lg:text-sm uppercase font-medium;
+
+	/* Border */
+	@apply rounded-t-xl rounded-r-xl;
+
+	/* Background */
+	@apply bg-[#f7b50a];
+
+}
+
+.about__title {
+
+	/* Typography */
+	@apply text-3xl lg:text-5xl font-medium;
+
+}
+
+.about_description {
+
+	/* Typography */
+	@apply text-slate-600;
+
+}
+
+.about__items {
+
+	/* Layout */
+	@apply grid grid-cols-2 lg:grid-cols-3;
+
+	/* Spacing */
+	@apply gap-10;
+
+}
+
+.about__item {
+
+	/* Layout */
+	@apply flex flex-col;
+
+}
+
+.about__number {
+
+	/* Typography */
+	@apply text-4xl lg:text-5xl font-medium text-[#f7b50a];
+
+}
+
+.about__description {
+
+	/* Typography */
+	@apply text-sm text-slate-700;
+
+}
+
+.about__link {
+
+	/* Layout */
+	@apply w-full text-center lg:w-auto;
+
+	/* Spacing */
+	@apply px-10 py-4 mt-5;
+
+	/* Typography */
+	@apply font-medium;
+
+	/* Border */
+	@apply rounded-2xl;
+
+	/* Background */
+	@apply bg-[#f7b50a] hover:bg-[#e5a80c];
+
+	/* Interaction */
+	@apply cursor-pointer;
+
+}
+
+.about__name {
+
+	/* Layout */
+	@apply flex flex-col;
+
+}
+
+.about__line {
+
+	/* Sizing */
+	@apply w-16 h-0.5;
+
+	/* Background */
+	@apply bg-[#f7b50a];
+
+}
