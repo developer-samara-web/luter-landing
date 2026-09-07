@@ -1,0 +1,157 @@
+@reference "../../app/globals.css";
+
+.hero__inner {
+
+	/* Layout */
+	@apply flex flex-col-reverse lg:flex-row container;
+
+	/* Spacing */
+	@apply pt-10 lg:py-16;
+
+}
+
+.hero__content {
+
+	/* Layout */
+	@apply flex flex-col items-start justify-center;
+
+	/* Spacing */
+	@apply gap-5;
+
+}
+
+.hero__badge {
+
+	/* Typography */
+	@apply text-sm font-medium uppercase text-[#604602];
+
+	/* Spacing */
+	@apply px-2 py-1;
+
+	/* Border */
+	@apply rounded-lg;
+
+	/* Background */
+	@apply bg-[#f7b50a6b];
+
+}
+
+.hero__header {
+
+	/* Layout */
+	@apply flex flex-col;
+
+}
+
+.hero__first-name {
+
+	/* Typography */
+	@apply text-center text-5xl font-medium text-slate-900 lg:text-left lg:text-[100px]/30;
+
+}
+
+.hero__second-name {
+
+	/* Typography */
+	@apply text-center text-3xl font-medium text-slate-900 lg:text-left lg:text-6xl;
+
+}
+
+.hero__description {
+
+	/* Spacing */
+	@apply pt-5;
+
+	/* Typography */
+	@apply text-center text-base text-slate-500 lg:max-w-[80%] lg:text-left lg:text-xl;
+
+}
+
+.hero__actions {
+
+	/* Layout */
+	@apply flex flex-col lg:flex-row;
+
+	/* Sizing */
+	@apply w-full lg:w-auto;
+
+	/* Spacing */
+	@apply gap-5 lg:pt-10;
+
+}
+
+.hero__button {
+
+	/* Layout */
+	@apply flex flex-row items-center justify-center;
+
+	/* Spacing */
+	@apply gap-2 px-10 py-4;
+
+	/* Typography */
+	@apply font-medium;
+
+	/* Border */
+	@apply rounded-xl;
+
+	/* Interaction */
+	@apply cursor-pointer;
+
+}
+
+.hero__button--primary {
+
+	/* Background */
+	@apply bg-[#f7b50a] hover:bg-[#e5a80c];
+
+}
+
+.hero__button--secondary {
+
+	/* Typography */
+	@apply text-slate-600;
+
+	/* Background */
+	@apply bg-slate-200 hover:bg-[#d0d6de];
+
+}
+
+.hero__advantages {
+
+	/* Layout */
+	@apply flex flex-col items-center lg:flex-row w-full;
+
+	/* Spacing */
+	@apply gap-5 pt-10 lg:gap-10;
+
+	/* Typography */
+	@apply text-slate-500;
+
+}
+
+.hero__advantage {
+
+	/* Layout */
+	@apply flex flex-row items-center;
+
+	/* Spacing */
+	@apply gap-2;
+
+}
+
+.hero__icon {
+
+	/* Sizing */
+	@apply size-6;
+
+	/* Color */
+	@apply text-[#f7b50a];
+
+}
+
+.hero__picture {
+
+	/* Layout */
+	@apply flex;
+
+}
