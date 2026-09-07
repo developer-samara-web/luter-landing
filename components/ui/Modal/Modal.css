@@ -1,0 +1,180 @@
+@reference "../../../app/globals.css";
+
+.modal {
+
+	/* Layout */
+	@apply fixed inset-0 z-[100] flex items-center justify-center;
+
+	/* Spacing */
+	@apply p-5;
+
+}
+
+.modal__overlay {
+
+	/* Layout */
+	@apply absolute inset-0 cursor-pointer;
+
+	/* Color */
+	@apply bg-slate-900/60 backdrop-blur-sm;
+
+}
+
+.modal__inner {
+
+	/* Layout */
+	@apply relative z-10 flex w-full max-w-lg flex-col;
+
+	/* Spacing */
+	@apply rounded-4xl p-6 sm:p-8;
+
+	/* Color */
+	@apply bg-white shadow-2xl;
+
+}
+
+.modal__close {
+
+	/* Layout */
+	@apply absolute right-4 top-4 flex h-10 w-10
+		items-center justify-center cursor-pointer;
+
+	/* Spacing */
+	@apply rounded-xl;
+
+	/* Color */
+	@apply bg-slate-100 text-slate-500 transition-all
+		hover:bg-[#f7b50a] hover:text-slate-900;
+
+}
+
+.modal__icon {
+
+	/* Sizing */
+	@apply size-5;
+
+}
+
+.modal__header {
+
+	/* Layout */
+	@apply flex flex-col items-center gap-2;
+
+	/* Typography */
+	@apply text-center;
+
+}
+
+.modal__badge {
+
+	/* Spacing */
+	@apply rounded-t-2xl rounded-r-2xl px-3 py-1;
+
+	/* Typography */
+	@apply text-xs font-medium uppercase;
+
+	/* Color */
+	@apply bg-linear-to-b from-[#feae64] to-[#fd5967] text-white;
+
+}
+
+.modal__title {
+
+	/* Typography */
+	@apply text-2xl font-medium lg:text-3xl;
+
+	/* Color */
+	@apply text-[#11182d];
+
+}
+
+.modal__description {
+
+	/* Typography */
+	@apply text-sm leading-6;
+
+	/* Color */
+	@apply text-slate-500;
+
+}
+
+.modal__form {
+
+	/* Layout */
+	@apply mt-8 flex flex-col gap-5;
+
+}
+
+.modal__field {
+
+	/* Layout */
+	@apply flex flex-col gap-2;
+
+}
+
+.modal__label {
+
+	/* Typography */
+	@apply text-sm font-medium;
+
+	/* Color */
+	@apply text-[#11182d];
+
+}
+
+.modal__input {
+
+	/* Layout */
+	@apply w-full outline-none;
+
+	/* Spacing */
+	@apply rounded-2xl border px-5 py-4;
+
+	/* Typography */
+	@apply text-sm;
+
+	/* Color */
+	@apply border-slate-200 bg-slate-50 text-slate-700
+		transition-all placeholder:text-slate-400
+		focus:border-[#ff7a67] focus:bg-white;
+
+}
+
+.modal__button {
+
+	/* Layout */
+	@apply flex flex-row items-center justify-center;
+
+	/* Spacing */
+	@apply gap-2 px-10 py-4;
+
+	/* Typography */
+	@apply font-medium;
+
+	/* Border */
+	@apply rounded-xl;
+
+	/* Interaction */
+	@apply cursor-pointer;
+
+}
+
+.modal__button--primary {
+
+	/* Background */
+	@apply bg-[#f7b50a] hover:bg-[#e5a80c];
+
+}
+
+.modal__privacy {
+
+	/* Spacing */
+	@apply mt-4;
+
+	/* Typography */
+	@apply text-center text-xs leading-5;
+
+	/* Color */
+	@apply text-slate-400;
+
+}

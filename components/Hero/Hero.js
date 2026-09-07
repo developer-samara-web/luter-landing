@@ -1,11 +1,26 @@
+"use client"
+
 import "./Hero.css";
 
+import { useState } from "react";
 import Image from "next/image";
 import HeroItems from "./HeroItems";
 import HeroActions from "./HeroActions";
 import { AcademicCapIcon, ArrowLongRightIcon, ShieldCheckIcon, UserCircleIcon } from "@heroicons/react/24/solid";
+import Modal from "@/components/ui/Modal/Modal";
 
 const Hero = () => {
+	const [isModalOpen, setIsModalOpen] = useState(false);
+	const [selectedService, setSelectedService] = useState('');
+
+
+	const handleOpenModal = () => {
+		setIsModalOpen(true);
+	};
+
+	const handleCloseModal = () => {
+		setIsModalOpen(false);
+	};
 
 	const { header, items, buttons } = {
 
@@ -19,7 +34,7 @@ const Hero = () => {
 			{
 				name: 'Получить консультацию',
 				type: 'hero__button--primary',
-				event: '#'
+				event: handleOpenModal
 			},
 			{
 				name: 'Все практики',
@@ -59,6 +74,12 @@ const Hero = () => {
 				</div>
 				<Image className="hero__picture" src="/images/hero/hero.webp" width={700} height={700} alt="Hero" />
 			</div>
+
+			<Modal
+				isOpen={isModalOpen}
+				onClose={handleCloseModal}
+				service={selectedService}
+			/>
 		</section>
 	);
 }

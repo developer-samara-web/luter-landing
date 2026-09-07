@@ -1,6 +1,6 @@
 const HeroAction = ({ name, event, type, icon }) => {
 	return (
-		<button className={`hero__button ${type}`}>
+		<button onClick={event || undefined} className={`hero__button ${type}`}>
 			{name}
 			{icon}
 		</button>
