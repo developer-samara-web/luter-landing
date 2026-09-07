@@ -1,0 +1,98 @@
+@reference "../../app/globals.css";
+
+.articles {
+
+	/* Layout */
+	@apply flex flex-col;
+
+	/* Spacing */
+	@apply pt-16;
+
+}
+
+.articles__inner {
+
+	/* Layout */
+	@apply container;
+
+}
+
+.articles__items {
+
+	/* Layout */
+	@apply grid grid-cols-1 lg:grid-cols-4;
+
+	/* Spacing */
+	@apply gap-10 pt-16;
+
+}
+
+.articles__item {
+
+	/* Layout */
+	@apply flex flex-col;
+
+	/* Spacing */
+	@apply overflow-hidden;
+
+	/* Border */
+	@apply border border-slate-100 rounded-3xl;
+
+	/* Background */
+	@apply bg-white;
+
+}
+
+.articles__content {
+
+	/* Layout */
+	@apply flex flex-col justify-between items-start;
+
+	/* Spacing */
+	@apply gap-3 p-5;
+
+}
+
+.articles__date {
+
+	/* Typography */
+	@apply text-slate-900;
+
+}
+
+.articles__title {
+
+	/* Typography */
+	@apply text-slate-600 text-sm;
+
+}
+
+.articles__link {
+
+	/* Layout */
+	@apply flex flex-row items-center justify-center;
+
+	/* Spacing */
+	@apply gap-2;
+
+	/* Typography */
+	@apply text-[#f7b50a];
+
+}
+
+.articles__row {
+
+	/* Layout */
+	@apply flex flex-col;
+
+	/* Spacing */
+	@apply gap-1;
+
+}
+
+.articles__icon {
+
+	/* Sizing */
+	@apply size-4;
+
+}
