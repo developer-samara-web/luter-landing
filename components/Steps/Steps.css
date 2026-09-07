@@ -1,0 +1,106 @@
+@reference "../../app/globals.css";
+
+.steps {
+
+	/* Layout */
+	@apply flex flex-col justify-center items-center w-full;
+
+	/* Spacing */
+	@apply py-16;
+
+}
+
+.steps__inner {
+
+	/* Layout */
+	@apply flex flex-col container;
+
+}
+
+.steps__list {
+
+	/* Layout */
+	@apply relative;
+
+	/* Spacing */
+	@apply pt-16;
+
+}
+
+.steps__line {
+
+	/* Layout */
+	@apply absolute left-[10%] right-[10%] top-22 hidden;
+
+	/* Border */
+	@apply border-t border-dashed;
+
+	/* Color */
+	@apply border-[#feae64];
+
+	/* Responsive */
+	@apply lg:block;
+
+}
+
+.steps__items {
+
+	/* Layout */
+	@apply relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5;
+
+	/* Spacing */
+	@apply gap-10 lg:gap-5;
+
+}
+
+.steps__item {
+
+	/* Layout */
+	@apply relative text-center;
+
+}
+
+.steps__number {
+
+	/* Layout */
+	@apply relative z-10 mx-auto mb-6 flex h-12 w-12 items-center justify-center;
+
+	/* Border */
+	@apply rounded-2xl;
+
+	/* Typography */
+	@apply text-lg font-medium;
+
+	/* Color */
+	@apply bg-[#f7b50a] text-slate-800 bg-[#020305];
+
+}
+
+.steps__title {
+
+	/* Spacing */
+	@apply mb-2;
+
+	/* Typography */
+	@apply text-lg font-medium lg:text-xl;
+
+	/* Color */
+	@apply text-slate-800;
+
+}
+
+.steps__description {
+
+	/* Layout */
+	@apply mx-auto;
+
+	/* Sizing */
+	@apply lg:max-w-[250px];
+
+	/* Typography */
+	@apply text-base leading-5 lg:text-base;
+
+	/* Color */
+	@apply text-slate-500;
+
+}
