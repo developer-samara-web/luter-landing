@@ -67,7 +67,7 @@ const Faq = () => {
 						})}
 					</div>
 				</div>
-				<div className="faq__right" style={{ backgroundImage: `linear-gradient(to left, transparent 10%, rgba(0,0,0,1) 100%), url("/images/faq/faq.webp")` }}>
+				<div className="faq__right" style={{ backgroundImage: `linear-gradient(to left, transparent 10%, rgba(0,0,0,1) 100%), url("/images/faq/faq-1.webp")` }}>
 					<div className="faq__right-title">Остались вопросы?</div>
 					<div className="faq__right-description">Задайте свой вопрос прямо сейчас и получите ответ в ближайшее время.</div>
 					<button className="faq__button">Задать вопрос</button>
