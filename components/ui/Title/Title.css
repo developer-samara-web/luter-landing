@@ -1,0 +1,48 @@
+@reference "../../../app/globals.css";
+
+.section__header {
+
+	/* Layout */
+	@apply flex flex-col items-center;
+
+	/* Spacing */
+	@apply gap-2;
+
+}
+
+.section__badge {
+
+	/* Spacing */
+	@apply px-4 py-1;
+
+	/* Typography */
+	@apply text-xs uppercase font-medium lg:text-sm;
+
+	/* Border */
+	@apply rounded-t-xl rounded-r-xl;
+
+	/* Background */
+	@apply bg-[#f7b50a];
+
+}
+
+.section__title {
+
+	/* Typography */
+	@apply text-2xl font-medium text-slate-900 lg:text-4xl;
+
+}
+
+.section__header--left {
+
+	/* Alignment */
+	@apply items-start text-left;
+
+}
+
+.section__header--center {
+
+	/* Alignment */
+	@apply items-center text-center;
+
+}
