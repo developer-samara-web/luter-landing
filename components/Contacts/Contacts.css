@@ -1,0 +1,165 @@
+@reference "../../app/globals.css";
+
+.contacts {
+
+	/* Layout */
+	@apply flex flex-col;
+
+	/* Spacing */
+	@apply py-16;
+
+}
+
+.contacts__inner {
+
+	/* Layout */
+	@apply container grid grid-cols-1 lg:grid-cols-2;
+
+	/* Spacing */
+	@apply gap-10;
+
+}
+
+.contacts__left {
+
+	/* Layout */
+	@apply flex flex-col;
+
+	/* Spacing */
+	@apply gap-5;
+
+}
+
+.contacts__description {
+
+	/* Typography */
+	@apply text-lg text-slate-500;
+
+}
+
+.contacts__items {
+
+	/* Layout */
+	@apply flex flex-col;
+
+	/* Spacing */
+	@apply gap-8 pt-10;
+
+}
+
+.contacts__item {
+
+	/* Layout */
+	@apply flex flex-row;
+
+	/* Spacing */
+	@apply gap-5;
+
+}
+
+.contacts__icon {
+
+	/* Sizing */
+	@apply w-[60px] h-[60px];
+
+	/* Spacing */
+	@apply p-5;
+
+	/* Border */
+	@apply border border-slate-200 rounded-2xl;
+
+	/* Background */
+	@apply bg-slate-100;
+
+}
+
+.contacts__line {
+
+	/* Layout */
+	@apply flex flex-col;
+
+}
+
+.contacts__line-badge {
+
+	/* Typography */
+	@apply text-slate-800 font-medium;
+
+}
+
+.contacts__line-name {
+
+	/* Typography */
+	@apply text-slate-700 text-sm;
+
+}
+
+.contacts__line-description {
+
+	/* Typography */
+	@apply text-slate-500 text-xs;
+
+}
+
+.contacts__right {
+
+	/* Spacing */
+	@apply overflow-hidden;
+
+	/* Border */
+	@apply border border-slate-200 rounded-2xl;
+
+}
+
+.contacts__right-icon {
+
+	/* Sizing */
+	@apply size-12;
+
+	/* Spacing */
+	@apply p-3;
+
+	/* Border */
+	@apply border border-slate-200 rounded-2xl;
+
+	/* Background */
+	@apply bg-slate-100;
+
+}
+
+.contacts__right-item {
+
+	/* Layout */
+	@apply flex flex-row items-center;
+
+	/* Spacing */
+	@apply gap-3 p-6;
+
+	/* Background */
+	@apply bg-white;
+
+}
+
+.contacts__right-content {
+
+	/* Layout */
+	@apply flex flex-col;
+
+	/* Spacing */
+	@apply gap-1;
+
+}
+
+.contacts__right-address {
+
+	/* Typography */
+	@apply text-slate-800;
+
+}
+
+.contacts__right-description {
+
+	/* Typography */
+	@apply text-slate-500 text-xs;
+
+}
