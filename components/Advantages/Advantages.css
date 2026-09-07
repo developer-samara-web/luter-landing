@@ -1,0 +1,75 @@
+@reference "../../app/globals.css";
+
+.advantages {
+
+	/* Spacing */
+	@apply pt-16;
+
+}
+
+.advantages__inner {
+
+	/* Layout */
+	@apply flex flex-col container;
+
+	/* Spacing */
+	@apply gap-16;
+
+}
+
+.advantages__items {
+
+	/* Layout */
+	@apply grid grid-cols-1 lg:grid-cols-4;
+
+	/* Spacing */
+	@apply gap-10 lg:gap-5;
+
+}
+
+.advantages__item {
+
+	/* Layout */
+	@apply flex flex-col justify-center items-center;
+
+	/* Spacing */
+	@apply gap-5;
+
+}
+
+.advantages__icon {
+
+	/* Spacing */
+	@apply p-4;
+
+	/* Border */
+	@apply border border-slate-200 rounded-3xl;
+
+	/* Background */
+	@apply bg-slate-100;
+
+}
+
+.advantages__content {
+
+	/* Layout */
+	@apply flex flex-col justify-center items-center;
+
+	/* Spacing */
+	@apply gap-1;
+
+}
+
+.advantages__title {
+
+	/* Typography */
+	@apply text-slate-800 font-medium text-xl;
+
+}
+
+.advantages__description {
+
+	/* Typography */
+	@apply text-slate-500 text-center;
+
+}
