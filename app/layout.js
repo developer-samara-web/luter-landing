@@ -1,13 +1,13 @@
 import "./globals.css";
 
 export const metadata = {
-	title: "Luter&Co - Лютер Андрей Александрович",
+	title: "Luter & Co - Лютер Андрей Валерьевич",
 	description: "Опытный адвокат с индивидуальным подходом к каждому делу. Защищаю ваши интересы в сложных ситуациях.",
 };
 
 const RootLayout = ({ children }) => {
 	return (
-		<html lang="en">
+		<html lang="ru">
 			<body>{children}</body>
 		</html>
 	);

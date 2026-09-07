@@ -1,1 +1,21 @@
 @import "tailwindcss";
+
+@import "./fonts.css";
+
+html {
+	font-family: "Cera Pro";
+	scroll-behavior: smooth;
+}
+
+.wrapper {
+
+	/* Layout */
+	@apply flex flex-col items-center justify-center;
+
+	/* Spacing */
+	@apply px-5 lg:px-0;
+
+	/* Background */
+	@apply bg-slate-50;
+	
+}
