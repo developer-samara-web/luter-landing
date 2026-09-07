@@ -1,0 +1,203 @@
+@reference "../../app/globals.css";
+
+.faq {
+
+	/* Layout */
+	@apply flex flex-col justify-center items-center w-full;
+
+	/* Spacing */
+	@apply px-5 py-5 lg:px-0 lg:py-16;
+
+	/* Border */
+	@apply rounded-2xl;
+
+	/* Background */
+	@apply bg-white;
+
+}
+
+.faq__inner {
+
+	/* Layout */
+	@apply container grid grid-cols-1 lg:grid-cols-2;
+
+	/* Spacing */
+	@apply gap-10;
+
+}
+
+.faq__left {
+
+	/* Layout */
+	@apply flex flex-col;
+
+	/* Spacing */
+	@apply gap-10;
+
+}
+
+.faq__right {
+
+	/* Layout */
+	@apply flex flex-col items-start justify-end;
+
+	/* Spacing */
+	@apply gap-3 p-10;
+
+	/* Border */
+	@apply rounded-2xl lg:rounded-3xl;
+
+	/* Background */
+	@apply bg-no-repeat bg-center bg-cover;
+
+}
+
+.faq__right-title {
+
+	/* Typography */
+	@apply text-2xl lg:text-3xl text-center font-medium text-slate-100;
+
+}
+
+.faq__right-description {
+
+	/* Sizing */
+	@apply lg:max-w-[50%];
+
+	/* Typography */
+	@apply text-slate-200;
+
+}
+
+.faq__button {
+
+	/* Spacing */
+	@apply mt-5 px-10 py-4 w-full lg:w-auto;
+
+	/* Typography */
+	@apply font-medium;
+
+	/* Border */
+	@apply rounded-2xl;
+
+	/* Background */
+	@apply bg-[#f7b50a] hover:bg-[#e5a80c];
+
+	/* Interaction */
+	@apply cursor-pointer;
+
+}
+
+.faq__list {
+
+	/* Layout */
+	@apply flex flex-col;
+
+	/* Spacing */
+	@apply gap-3;
+
+}
+
+.faq__item {
+
+	/* Layout */
+	@apply overflow-hidden;
+
+	/* Border */
+	@apply rounded-2xl border border-slate-200;
+
+	/* Background */
+	@apply bg-white;
+
+	/* Animation */
+	@apply transition-all duration-300;
+
+}
+
+.faq__item--active {
+
+	/* Border */
+	@apply border-slate-200;
+
+}
+
+.faq__question {
+
+	/* Layout */
+	@apply flex w-full items-center justify-between;
+
+	/* Spacing */
+	@apply gap-5 px-5 py-4;
+
+	/* Typography */
+	@apply text-left text-sm font-medium lg:text-base;
+
+	/* Color */
+	@apply text-slate-800;
+
+	/* Interaction */
+	@apply cursor-pointer;
+
+}
+
+.faq__icon {
+
+	/* Layout */
+	@apply flex size-8 shrink-0 items-center justify-center;
+
+	/* Border */
+	@apply rounded-xl;
+
+	/* Typography */
+	@apply text-xl leading-none;
+
+	/* Background */
+	@apply bg-[#ffbd00] hover:bg-[#e5a80c];
+
+	/* Color */
+	@apply text-slate-800;
+
+	/* Animation */
+	@apply transition-transform duration-300;
+
+}
+
+.faq__answer {
+
+	/* Layout */
+	@apply grid grid-rows-[0fr];
+
+	/* Animation */
+	@apply transition-all duration-300;
+
+}
+
+.faq__answer--active {
+
+	/* Layout */
+	@apply grid-rows-[1fr];
+
+}
+
+.faq__answer p {
+
+	/* Layout */
+	@apply min-h-0 overflow-hidden;
+
+	/* Spacing */
+	@apply px-5;
+
+	/* Typography */
+	@apply text-sm leading-6;
+
+	/* Color */
+	@apply text-slate-500;
+
+}
+
+.faq__answer--active p {
+
+	/* Spacing */
+	@apply pb-5;
+
+}

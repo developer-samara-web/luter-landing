@@ -4,6 +4,7 @@ import Practices from "@/components/Practices/Practices";
 import Advantages from "@/components/Advantages/Advantages";
 import About from "@/components/About/About";
 import Steps from "@/components/Steps/Steps";
+import Faq from "@/components/Faq/Faq";
 import Reviews from "@/components/Reviews/Reviews";
 
 const Home = () => {
